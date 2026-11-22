@@ -1,0 +1,11 @@
+import { readFile } from 'node:fs/promises';
+const account='a7684b64536ac77c302658cc04cdbaad';
+const token=process.env.CLOUDFLARE_API_TOKEN;
+if(!token) throw new Error('Set CLOUDFLARE_API_TOKEN with Workers Scripts Edit for the target account. Never commit it.');
+const form=new FormData();
+form.append('metadata',new Blob([JSON.stringify({main_module:'worker.mjs',compatibility_date:'2026-11-22'})],{type:'application/json'}));
+form.append('worker.mjs',new Blob([await readFile('.cloudflare/worker.mjs')],{type:'application/javascript+module'}),'worker.mjs');
+const response=await fetch(`https://api.cloudflare.com/client/v4/accounts/${account}/workers/scripts/eccospa`,{method:'PUT',headers:{Authorization:`Bearer ${token}`},body:form});
+const result=await response.json();
+if(!response.ok || !result.success) throw new Error(JSON.stringify(result.errors));
+console.log('Deployed eccospa. Version:',result.result.deployment_id);

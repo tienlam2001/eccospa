@@ -1,0 +1,27 @@
+{
+  "name": "eccospa",
+  "version": "1.0.0",
+  "description": "Ecco Nails & Spa — Lake Mary website",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/package-worker.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "check": "node --test tests/worker.test.mjs",
+    "deploy": "npm run build && node scripts/deploy.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tienlam2001/eccospa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/tienlam2001/eccospa/issues"
+  },
+  "homepage": "https://github.com/tienlam2001/eccospa#readme",
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}
