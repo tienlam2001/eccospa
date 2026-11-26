@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECCO Nails &amp; Spa — Menu</title>
+<meta name="description" content="Full service menu and pricing for ECCO Nails &amp; Spa.">
+<style>
+  :root {
+    --ink: #1c1c1c;
+    --muted: #6b6b6b;
+    --line: #e4e0da;
+    --bg: #fdfcfa;
+    --accent: #9c7a4e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+  header { text-align: center; margin-bottom: 28px; }
+  .brand { font-size: 2.6rem; letter-spacing: 0.18em; margin: 0; font-weight: 400; }
+  .tagline { letter-spacing: 0.3em; font-size: 0.7rem; color: var(--muted); margin-top: 6px; text-transform: uppercase; }
+  .divider { border: none; border-top: 1px solid var(--line); margin: 22px 0; }
+  nav.tabs { display: flex; justify-content: center; gap: 10px; margin: 18px 0 30px; flex-wrap: wrap; }
+  nav.tabs button {
+    font-family: inherit; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+    background: transparent; border: 1px solid var(--line); color: var(--ink);
+    padding: 8px 16px; border-radius: 999px; cursor: pointer;
+  }
+  nav.tabs button.active { background: var(--ink); color: #fff; border-color: var(--ink); }
+  section.panel { display: none; }
+  section.panel.active { display: block; }
+  .section-title { text-align: center; letter-spacing: 0.25em; font-size: 0.95rem; text-transform: uppercase; margin: 30px 0 18px; }
+  .cols { display: grid; grid-template-columns: 1fr; gap: 28px; }
+  @media (min-width: 640px) { .cols { grid-template-columns: 1fr 1fr; } }
+  .cols.three { grid-template-columns: 1fr; }
+  @media (min-width: 860px) { .cols.three { grid-template-columns: 1fr 1fr 1fr; } }
+  h3.group { font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: 1px solid var(--line); padding-bottom: 6px; margin: 0 0 10px; }
+  ul.items { list-style: none; margin: 0 0 18px; padding: 0; }
+  ul.items li { display: flex; justify-content: space-between; gap: 10px; padding: 4px 0; font-size: 0.95rem; }
+  ul.items li .nm { color: var(--ink); }
+  ul.items li .pr { color: var(--muted); white-space: nowrap; }
+  .note { font-size: 0.82rem; color: var(--muted); font-style: italic; margin: 6px 0 16px; }
+  .combo-wrap { overflow-x: auto; margin: 16px 0 28px; }
+  table.combo { width: 100%; border-collapse: collapse; font-size: 0.88rem; min-width: 420px; }
+  table.combo th, table.combo td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: left; }
+  table.combo th { text-transform: uppercase; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--muted); }
+  table.combo td.price { text-align: right; }
+  .pedi-card { border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin-bottom: 16px; }
+  .pedi-card .hd { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+  .pedi-card .hd .nm { font-size: 1.05rem; letter-spacing: 0.04em; }
+  .pedi-card .hd .pr { font-size: 1.05rem; color: var(--accent); }
+  .pedi-card p { margin: 0; color: #444; font-size: 0.92rem; line-height: 1.5; }
+  footer { text-align: center; margin-top: 40px; color: var(--muted); font-size: 0.82rem; }
+  footer .fine { margin-top: 4px; font-size: 0.75rem; }
+  a { color: inherit; }
+  .call-btn { display: inline-block; margin-top: 16px; padding: 10px 22px; border: 1px solid var(--ink); border-radius: 999px; text-decoration: none; letter-spacing: 0.08em; font-size: 0.8rem; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="brand">ECCO</p>
+    <p class="tagline">Nails &amp; Spa</p>
+  </header>
+
+  <nav class="tabs">
+    <button class="active" data-panel="services">All Services</button>
+    <button data-panel="pedicures">Pedicure Spa Menu</button>
+  </nav>
+
+  <section class="panel active" id="services">
+    <div class="cols three">
+<div>
+<h3 class="group">Manicure</h3>
+<ul class="items">
+<li><span class="nm">Classic</span><span class="pr">$25</span></li>
+<li><span class="nm">Gel</span><span class="pr">$37</span></li>
+<li><span class="nm">French Gel</span><span class="pr">$44</span></li>
+<li><span class="nm">Gel Color Change</span><span class="pr">$26</span></li>
+<li><span class="nm">Gel Color Only</span><span class="pr">$20</span></li>
+<li><span class="nm">Take Off Gel Only</span><span class="pr">$10</span></li>
+<li><span class="nm">Take Off Gel w/ Service</span><span class="pr">$5</span></li>
+</ul>
+</div>
+<div>
+<h3 class="group">Acrylic</h3>
+<ul class="items">
+<li><span class="nm">Full Set w/ Gel</span><span class="pr">$52</span></li>
+<li><span class="nm">Pink & White Ombre</span><span class="pr">$65</span></li>
+<li><span class="nm">Fill w/ Gel</span><span class="pr">$47</span></li>
+<li><span class="nm">Pink & White Fill</span><span class="pr">$55</span></li>
+<li><span class="nm">Almond / Coffin (add)</span><span class="pr">$5</span></li>
+<li><span class="nm">Medium Length (add)</span><span class="pr">$5</span></li>
+<li><span class="nm">Cut Down / Reshape (add)</span><span class="pr">$5</span></li>
+<li><span class="nm">Take Off w/ Service</span><span class="pr">$10</span></li>
+</ul>
+<p class="note">Add Classic Manicure · $15 — With full set · Save $10</p>
+</div>
+<div>
+<h3 class="group">Pedicure</h3>
+<ul class="items">
+<li><span class="nm">Classic</span><span class="pr">$32</span></li>
+<li><span class="nm">Premium</span><span class="pr">$40</span></li>
+<li><span class="nm">Deluxe</span><span class="pr">$47</span></li>
+<li><span class="nm">Collagen</span><span class="pr">$57</span></li>
+<li><span class="nm">Hurricane</span><span class="pr">$67</span></li>
+<li><span class="nm">Gold Ritual</span><span class="pr">$77</span></li>
+</ul>
+</div>
+<div>
+<h3 class="group">Dipping</h3>
+<ul class="items">
+<li><span class="nm">Color Dip</span><span class="pr">$47</span></li>
+<li><span class="nm">French Dip / Color Tip</span><span class="pr">$54</span></li>
+<li><span class="nm">Ombre Dip</span><span class="pr">$62</span></li>
+<li><span class="nm">Extension (add)</span><span class="pr">$7</span></li>
+<li><span class="nm">Shape (add)</span><span class="pr">$5</span></li>
+<li><span class="nm">Take Off w/ Service</span><span class="pr">$7</span></li>
+<li><span class="nm">Take Off Only</span><span class="pr">$10</span></li>
+</ul>
+<p class="note">Add Classic Manicure · $15 — With dipping · Save $10</p>
+</div>
+<div>
+<h3 class="group">Builder / Liquid Gel</h3>
+<ul class="items">
+<li><span class="nm">Full Set</span><span class="pr">$60</span></li>
+<li><span class="nm">Full Set Pink & White</span><span class="pr">$67</span></li>
+<li><span class="nm">Fill</span><span class="pr">$50</span></li>
+<li><span class="nm">Long Nail Fill</span><span class="pr">$55</span></li>
+<li><span class="nm">Shape (add)</span><span class="pr">$5</span></li>
+<li><span class="nm">Take Off w/ Service</span><span class="pr">$7</span></li>
+<li><span class="nm">Take Off Only</span><span class="pr">$15</span></li>
+</ul>
+<p class="note">Add Classic Manicure · $15 — With full set · Save $10</p>
+</div>
+<div>
+<h3 class="group">Gel-X</h3>
+<ul class="items">
+<li><span class="nm">Full Set</span><span class="pr">$60</span></li>
+<li><span class="nm">Long Full Set</span><span class="pr">$65</span></li>
+</ul>
+<p class="note">Add Classic Manicure · $15 — With full set · Save $10</p>
+</div>
+<div>
+<h3 class="group">Pedicure Add-Ons</h3>
+<ul class="items">
+<li><span class="nm">Gel Polish</span><span class="pr">$20</span></li>
+<li><span class="nm">Collagen Socks / Gloves</span><span class="pr">$12</span></li>
+<li><span class="nm">French Tips</span><span class="pr">$7</span></li>
+<li><span class="nm">Gel Removal</span><span class="pr">$7</span></li>
+<li><span class="nm">Acrylic – 1 Toe</span><span class="pr">$8</span></li>
+<li><span class="nm">Acrylic – 2 Big Toes</span><span class="pr">$15</span></li>
+<li><span class="nm">Acrylic Refill – 2 Toes</span><span class="pr">$10</span></li>
+<li><span class="nm">5-Min Massage</span><span class="pr">$10</span></li>
+</ul>
+</div>
+<div>
+<h3 class="group">Polish / Add-Ons</h3>
+<ul class="items">
+<li><span class="nm">Gel Color Only</span><span class="pr">$22</span></li>
+<li><span class="nm">Gel Color Change</span><span class="pr">$26</span></li>
+<li><span class="nm">Regular Polish – Toes</span><span class="pr">$16</span></li>
+<li><span class="nm">Regular Polish – Hands</span><span class="pr">$13</span></li>
+<li><span class="nm">French</span><span class="pr">$7</span></li>
+<li><span class="nm">Buff Shine</span><span class="pr">$7</span></li>
+<li><span class="nm">Design</span><span class="pr">$10</span></li>
+<li><span class="nm">Gel Ombre</span><span class="pr">$15</span></li>
+<li><span class="nm">Matte Gel</span><span class="pr">$7</span></li>
+<li><span class="nm">Chrome</span><span class="pr">$12</span></li>
+<li><span class="nm">Cat Eye Gel</span><span class="pr">$12</span></li>
+<li><span class="nm">5 Different Colors</span><span class="pr">$7</span></li>
+<li><span class="nm">Take Off Gel</span><span class="pr">$7</span></li>
+</ul>
+</div>
+<div>
+<h3 class="group">Kids</h3>
+<ul class="items">
+<li><span class="nm">Regular Mani</span><span class="pr">$17</span></li>
+<li><span class="nm">Regular Pedi</span><span class="pr">$27</span></li>
+<li><span class="nm">Gel Mani</span><span class="pr">$32</span></li>
+<li><span class="nm">Gel Pedi</span><span class="pr">$42</span></li>
+<li><span class="nm">Regular Polish</span><span class="pr">$15</span></li>
+<li><span class="nm">Gel Polish Change</span><span class="pr">$20</span></li>
+</ul>
+</div>
+<div>
+<h3 class="group">Waxing</h3>
+<ul class="items">
+<li><span class="nm">Eyebrows</span><span class="pr">$13</span></li>
+<li><span class="nm">Upper Lip</span><span class="pr">$9</span></li>
+<li><span class="nm">Lower Lip</span><span class="pr">$9</span></li>
+<li><span class="nm">Chin</span><span class="pr">$12</span></li>
+<li><span class="nm">Sideburns</span><span class="pr">$20</span></li>
+<li><span class="nm">Back Neck</span><span class="pr">$20</span></li>
+<li><span class="nm">Full Face</span><span class="pr">$50</span></li>
+<li><span class="nm">Underarms</span><span class="pr">$25</span></li>
+<li><span class="nm">Half Arms</span><span class="pr">$30</span></li>
+<li><span class="nm">Full Arms</span><span class="pr">$50</span></li>
+<li><span class="nm">Half Legs</span><span class="pr">$45</span></li>
+<li><span class="nm">Full Legs</span><span class="pr">$70</span></li>
+<li><span class="nm">Chest</span><span class="pr">$45</span></li>
+<li><span class="nm">Back</span><span class="pr">$55</span></li>
+<li><span class="nm">Full Body</span><span class="pr">$245</span></li>
+</ul>
+</div>
+</div>
+
+  </section>
+
+  <section class="panel" id="pedicures">
+    <p class="section-title" style="margin-top:0;">Pedicure Spa Menu</p>
+<div class="pedi-card"><div class="hd"><span class="nm">Classic</span><span class="pr">$32</span></div><p>Warm foot soak; nail trimming and shaping; cuticle care; light heel buffing; callus removal not included; lotion massage; hot towel; regular polish.</p></div>
+<div class="pedi-card"><div class="hd"><span class="nm">Premium</span><span class="pr">$40</span></div><p>Classic Pedicure care; sugar scrub; callus removal; moisturizing lotion massage; hot towel; regular polish.</p></div>
+<div class="pedi-card"><div class="hd"><span class="nm">Deluxe</span><span class="pr">$47</span></div><p>Nail and cuticle care; sugar scrub; callus removal; hydrating foot mask; moisturizing lotion massage; two hot towels; regular polish.</p></div>
+<div class="pedi-card"><div class="hd"><span class="nm">Collagen</span><span class="pr">$57</span></div><p>Nail and cuticle care; exfoliating scrub; callus removal; collagen moisturizing treatment; paraffin wax; lotion massage; three hot towels; regular polish.</p></div>
+<div class="pedi-card"><div class="hd"><span class="nm">Hurricane</span><span class="pr">$67</span></div><p>Specialty spa treatment; exfoliating scrub; callus removal; moisturizing mask; paraffin wax; hot stone massage; three hot towels; regular polish.</p></div>
+<div class="pedi-card"><div class="hd"><span class="nm">Gold Ritual</span><span class="pr">$77</span></div><p>Golden spa soak; premium exfoliating scrub; callus removal; Golden moisturizing mask; paraffin wax; steamer treatment; hot stone massage; three hot towels; regular polish.</p></div>
+<div class="cols ">
+<div>
+<h3 class="group">Pedicure Add-Ons</h3>
+<ul class="items">
+<li><span class="nm">Gel Polish</span><span class="pr">$20</span></li>
+<li><span class="nm">French Tips</span><span class="pr">$7</span></li>
+<li><span class="nm">Gel Removal</span><span class="pr">$7</span></li>
+<li><span class="nm">Collagen Socks / Gloves</span><span class="pr">$12</span></li>
+<li><span class="nm">Acrylic – 1 Toe</span><span class="pr">$8</span></li>
+<li><span class="nm">Acrylic – 2 Big Toes</span><span class="pr">$15</span></li>
+<li><span class="nm">Acrylic Refill – 2 Toes</span><span class="pr">$10</span></li>
+<li><span class="nm">5-Min Massage</span><span class="pr">$10</span></li>
+</ul>
+</div>
+</div>
+<h3 class="group" style="margin-top:10px;">Mani + Pedi Combos</h3>
+<p class="note">Regular toe polish included. Gel color on toes +$20. Save $5 on your manicure with any adult pedicure.</p>
+<div class="combo-wrap"><table class="combo"><thead><tr><th>Pedicure</th><th>Classic Manicure</th><th>Gel Manicure</th></tr></thead><tbody>
+<tr><td>Classic</td><td class="price">$52</td><td class="price">$64</td></tr>
+<tr><td>Premium</td><td class="price">$60</td><td class="price">$72</td></tr>
+<tr><td>Deluxe</td><td class="price">$67</td><td class="price">$79</td></tr>
+<tr><td>Collagen</td><td class="price">$77</td><td class="price">$89</td></tr>
+<tr><td>Hurricane</td><td class="price">$87</td><td class="price">$99</td></tr>
+<tr><td>Gold Ritual</td><td class="price">$97</td><td class="price">$109</td></tr>
+</tbody></table></div>
+
+  </section>
+
+  <footer>
+    <div>4300 W Lake Mary Blvd #1030, Lake Mary, FL 32746 &middot; (407) 333-0904 &middot; ecconailsspa.com</div>
+    <div class="fine">Starting prices. Prices may vary by length, shape and design.</div>
+    <a class="call-btn" href="tel:+14073330904">Call (407) 333-0904</a>
+  </footer>
+</div>
+<script>
+  document.querySelectorAll('nav.tabs button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('nav.tabs button').forEach(function (b) { b.classList.remove('active'); });
+      document.querySelectorAll('section.panel').forEach(function (p) { p.classList.remove('active'); });
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.panel).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
